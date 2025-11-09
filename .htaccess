@@ -1,0 +1,5 @@
+RewriteEngine On
+
+# Match exactly /ctf/pages or /ctf/pages/
+RewriteCond %{REQUEST_URI} ^/ctf/pages/?$ [NC]
+RewriteRule ^.*$ /ctf/404.php [L,R=302]
